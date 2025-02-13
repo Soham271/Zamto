@@ -1,0 +1,20 @@
+.hell{
+  position: relative;
+  left: 350px;
+top: -180px;
+font-size: 45px;
+}
+p{
+  position: relative;
+  left: 370px;
+  font-size: 35px;
+top: -100px;
+}
+.confirm-order{
+ 
+  position: relative;
+  width: 1200px;
+  top: 200px;
+  left: 150px;
+
+}

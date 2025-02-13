@@ -1,0 +1,69 @@
+.footer {
+  background-color: #323233;
+  color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 8vw;
+  padding-top: 80px;
+  margin-top: 100px;
+  width: 100vw;
+ 
+  position: relative;
+  right: 80px;
+
+
+}
+
+.footer-content {
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+.footer-content-left p{
+  background-color: #323232; 
+  background-color: transparent;
+}
+.footer-content-right,
+.footer-content-left,
+.footer-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Updated from start to flex-start */
+  gap: 20px;
+}
+
+.footer-content-center li,
+.footer-content-left li,
+.footer-content-right li {
+  margin-top: 20px; /* Ensure this applies */
+  cursor: pointer;
+}
+
+.footer-content-center ul,
+.footer-content-left ul,
+.footer-content-right ul {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Ensure there's no default list style */
+}
+.footer-content-center h2,
+.footer-content-left h2,
+.footer-content-right h2{
+  color: white;
+
+}
+/* .footer-social-icon img{
+  width: 40px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.footer hr{
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background-color: grey;
+  border: none;
+} */

@@ -1,0 +1,165 @@
+.Navbar {
+  padding: 20px 15px; /* Added padding for smaller screens */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Handles smaller screen layouts */
+  background-color: #fff; /* Optional: Add background color for visibility */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better UI */
+}
+
+.Navbar .logo {
+  width: 180px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.navbar-menu a {
+  color: #49557e;
+  font-size: 16px; /* Slightly smaller for better balance */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Add spacing for better touch targets */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-menu a.active {
+  color: red; /* Highlight for active link */
+}
+
+.navbar-menu a:hover {
+  color: green; /* Change color on hover */
+  text-decoration: underline; /* Enhanced hover effect */
+}
+
+.navbar-right {
+  display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+bottom: 50px;
+
+  gap: 20px;
+}
+
+.navbar-button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar-button:hover {
+  background: #fff4f2; /* Subtle background on hover */
+}
+
+.navbar-buttons {
+  background-color: transparent;
+  border: none;
+  color: #49557e;
+}
+
+.navbar-search-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-search-icon img {
+  width: 28px; /* Ensure consistent size */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar-search-icon img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-height: 10px;
+  min-width: 10px;
+  background-color: tomato;
+  top: -5px;
+  right: -5px;
+  border-radius: 50%; /* Circular dot */
+  border: 2px solid white; /* Border for better contrast */
+}
+
+.logo {
+  position: relative;
+  left: 10px; /* Adjust for alignment */
+}
+
+/* Responsive Styles */
+@media (max-width: 1050px) {
+  .Navbar .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+    font-size: 17px;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .navbar-button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+
+  .navbar-search-icon img {
+    width: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Navbar .logo {
+    width: 120px;
+  }
+
+  .navbar-menu {
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+  }
+
+  .navbar-button {
+    padding: 7px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar-menu {
+    display: none; /* Hide the menu for smaller screens */
+  }
+
+  .Navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+  }
+
+  .navbar-right {
+    gap: 10px; /* Reduce spacing for compact view */
+  }
+
+  .navbar-search-icon img {
+    width: 20px; /* Adjust icon size */
+  }
+}

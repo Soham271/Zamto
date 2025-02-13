@@ -1,0 +1,34 @@
+.app-download{
+  background-image: url("../assets/food-del-assets/assets/admin_assets/pexels-photo-1640773.jpeg");
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(109, 107, 107);
+  font-weight: 690;
+  background-size: cover;
+
+}
+.app-download p{
+  font-size: 30px;
+  color: tomato;
+}
+.app-download-platform{
+  display: flex;
+  justify-content: center;
+  gap: max(4vw,10px);
+position: relative;
+top: 500px;
+
+}
+.app-download-platform img{
+width: max(30vw,120px);
+max-width: 180px;
+transition: 0.2s;
+cursor: pointer;
+}
+.app-download-platform img:hover{
+  transform: scale(1.5);
+  transition: 0.6;
+  }
